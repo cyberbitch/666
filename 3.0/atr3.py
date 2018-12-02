@@ -543,14 +543,14 @@ parser.add_argument(
     help='Number of Greenlets spawned',
     required=False,
     type=int,
-    default="1000")
+    default="250")
 parser.add_argument(
     '-iu',
     '--invunma',
     help='Log invalid an unmatched accounts.',
     required=False,
     type=bool,
-    default=True)
+    default=False)
 parser.add_argument(
     '-g',
     '--grabber',
@@ -578,7 +578,7 @@ parser.add_argument(
     help='timeout in sec',
     required=False,
     type=float,
-    default="5")
+    default="10")
 parser.add_argument(
     '-r',
     '--resume',
@@ -594,7 +594,7 @@ parser.add_argument(
     help='Performance mode for big files',
     required=False,
     type=bool,
-    default=False)
+    default=True)
 parser.add_argument(
     '-uh',
     '--unknownhosts',
